@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<!-- CSS styling -->
+<style>
+    body,
+    #info-div {
+        height: 100vh;
+    
+    }
+</style>
+
+<head>
+<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<!-- Menu -->
+    <nav class="dark-red">
+        
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Manifesto</a>
+            <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="Manifesto.html">Manifesto</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile button options -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Manifesto.html">Manifesto</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+      </ul>
+    
+
+<!-- Search icon -->
+    <div> <i class="large material-icons">search</i></div>
+
+<!-- Main Body -->
+    <div id="info-div" class="container">
+    <div class="center-align" >
+        <img src="index.png" alt="manifesto">
+        <h1>
+            If black isn't a color, then it's not a race either
+        </h1>
+        <p>
+        <h5> White is the combination of all colors, while black is the existence of no color, therefore, and I think
+            you would agree with me if I said, that black people don't exist. Black doesn't exist, therefore Black
+            people don't exist either. </h5>
+        </p>
+    </div>
+</div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <!-- Mobile button -->
+     <script>
+           document.addEventListener('DOMContentLoaded', function() {
+    var options = {};
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+  </script>
+</body>
+
+</html>
